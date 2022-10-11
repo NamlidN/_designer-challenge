@@ -25,6 +25,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: bol;
+    cursor: help;
 }
 
 header {
@@ -241,7 +242,9 @@ input{
     height: 2rem;
 }
 input[type="email"]{
+    color: #dddddd;
     border: solid #dddddd .1px;
+    box-shadow: .2rem .3rem .9rem .4rem #dddddd;
 
 }
 input[type="submit"]{
@@ -251,8 +254,21 @@ input[type="submit"]{
     border: #ff3571;
     color: #dddddd;
 }
+input[type="submit"]:hover{
+    background: linear-gradient(0.25turn, #ff3571, #3C30FF );
+}
 
 @media only screen and (max-width:600px) {
+    header {
+        background-image: url("../img/ilustracion1.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+        background-size: 10% 20%;
+        height: 80vh;
+        font-family: bol;
+        padding: 1rem 0 0 2rem;
+    }
     .ww{
         padding:  0 1rem;
     }
@@ -297,6 +313,16 @@ input[type="submit"]{
         
 }
 @media only screen and (max-width:900px) {
+    header {
+        background-image: url("../img/ilustracion1.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: contain;
+        background-size: 70% 70%;
+        height: 60vh;
+        font-family: bol;
+        padding: 1rem 0 0 2rem;
+    }
     .ww{
         padding:  0 1rem;
     }
@@ -343,7 +369,7 @@ input[type="submit"]{
         }
         
 }
-@media only screen and (min-width:1000px) {
+@media only screen and (min-width:950px) {
     header {
         background-image: url("../img/ilustracion1.png");
         background-repeat: no-repeat;
@@ -373,6 +399,7 @@ input[type="submit"]{
         color: #dddddd;
     
     }
+
     .stage {
         display: flex;
         height: 330px;
